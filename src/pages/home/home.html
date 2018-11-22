@@ -1,8 +1,13 @@
 <ion-header >
-  <ion-navbar >
-    <button ion-button icon-only menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+  <ion-navbar transparent >
+    <ion-buttons end>
+        <button ion-button icon-only  color="primary">
+            <ion-icon name="settings"></ion-icon>
+          </button>
+      <button ion-button icon-only  color="primary">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -10,7 +15,7 @@
 
 <ion-content padding class="bg-image">
   <div class="container">
-  <button ion-button  class="timesheet" outline color="dark">Rewards &amp; Recognation
+  <button ion-button   block class="timesheet" outline color="dark">Rewards &amp; Recognation
   </button>
   <button ion-button  class="timesheet" outline color="dark">Timesheet</button>
   <button ion-button  class="timesheet" outline color="dark" (click)="navigateToItSubmission()">IT Submission</button>

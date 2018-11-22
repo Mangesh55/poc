@@ -1,25 +1,19 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ItsubmissionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { UploaddocumentPage } from '../uploaddocument/uploaddocument';
+import { ScandocumentPage } from '../scandocument/scandocument';
 @IonicPage()
 @Component({
   selector: 'page-itsubmission',
   templateUrl: 'itsubmission.html',
 })
 export class ItsubmissionPage {
-
+  Scan = "../../assets/icon/scan.png";
+  uploaddocument = UploaddocumentPage;
+  scandocument = ScandocumentPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ItsubmissionPage');
+  navigateToHome(){
+    this.navCtrl.popToRoot();
   }
-
 }
