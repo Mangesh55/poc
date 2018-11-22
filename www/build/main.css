@@ -25676,9 +25676,9 @@ ion-navbar.toolbar {
 
 page-home .timesheet {
   width: 95%;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 3%;
-  padding: 5%;
+  padding: 3%;
   background-color: gray;
   color: white;
   border-color: white;
@@ -25688,7 +25688,25 @@ page-home .bg-image {
   background-image: url("../../assets/imgs/bg.png");
 }
 
+page-itsubmission ion-content {
+  background: whitesmoke !important;
+}
+
+page-itsubmission .home-icon {
+  width: 20px;
+  height: 20px;
+}
+
 page-itsubmission .header ion-title {
   text-align: center;
   margin-right: 20px;
+}
+
+page-uploaddocument .document-icon {
+  margin-top: 55%;
+  margin-left: 45%;
+}
+
+page-uploaddocument .no-document-found {
+  text-align: center;
 }

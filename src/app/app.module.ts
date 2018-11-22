@@ -8,13 +8,18 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ItsubmissionPage } from '../pages/itsubmission/itsubmission';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ScandocumentPage } from '../pages/scandocument/scandocument';
+import { UploaddocumentPage } from '../pages/uploaddocument/uploaddocument';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ItsubmissionPage,
-    TabsPage
+    TabsPage,
+    ScandocumentPage,
+    UploaddocumentPage
   ],
   imports: [
     BrowserModule,
@@ -25,11 +30,14 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     HomePage,
     ItsubmissionPage,
-    TabsPage
+    TabsPage,
+    ScandocumentPage,
+    UploaddocumentPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
